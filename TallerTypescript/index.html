@@ -39,34 +39,18 @@
                
                 
                 <h2>Datos Personales</h2>
-                
-                
-
-
-                <table>
+                <table class="table">
+                    <thead class="thead-dark">
+                       <tr>
+                          <th>Código</th>
+                          <th>Cédula</th>
+                          <th>Edad</th>
+                          <th>Dirección</th>
+                          <th>Teléfono</th>
+                       </tr>
+                    </thead>
                     
-                    
-                    <tbody>
-                        <tr>
-                            <td>Código</td>
-                            <td>202012747</td>
-                        </tr>
-                        <tr>
-                            <td>Cédula</td>
-                            <td>1000697494</td>
-                        </tr>
-                        <tr>
-                            <td>Edad</td>
-                            <td>19 Años</td>
-                        </tr>
-                        <tr>
-                            <td>Dirección</td>
-                            <td>Cra. 1 #18a-12</td>
-                        </tr>
-                        <tr>
-                            <td>Teléfono</td>
-                            <td>3188031985</td>
-                        </tr>
+                    <tbody id="student">
                     </tbody>    
                 </table>
                 
@@ -91,6 +75,16 @@
                 </div>
                 </div>
             </form>
+            <form style="margin:2px;">
+                <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" id="search-box-cred" placeholder="Filtrar por rango Créditos ,">
+                </div>
+                <div class="col">
+                    <button type="button" id="button-filterByCred" class="btn btn-success">Aplicar</button>
+                </div>
+                </div>
+            </form>
             <table class="table">
                 <thead class="thead-dark">
                    <tr>
@@ -107,6 +101,8 @@
         </div>
         <script type="module" src="./scripts/course.js" ></script>
         <script type="module" src="./scripts/dataCourses.js" ></script>
+        <script type="module" src="./scripts/student.js" ></script>
+        <script type="module" src="./scripts/dataStudent.js" ></script>
         <script type="module" src="./scripts/main.js"></script>
     </body>
 </html>
